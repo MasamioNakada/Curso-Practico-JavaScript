@@ -105,3 +105,6 @@ dist
 
 #Configuracion de Visual estudio Code
 .vscode
+
+#reto1
+.reto1.js

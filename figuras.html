@@ -14,18 +14,80 @@
     <h1>Figuras Geométricas</h1>
     <section>
         <h2>Calculo del área y perímetro de un cuadrado</h2>
-        <form>
-            <label>
 
-            </label>
-            <input>
-            <button>
-                Calcular el perímetro
-            </button>
-            <button>
-                Calcular el Área
-            </button>
-        </form>
+        <div class="container">
+            <div class="row">
+              <div class="col">
+
+                <div class="card" style="width: 18rem">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEX///8AAABQUFBNTU1TU1NjY2MXFxfu7u4stZ7VAAABdklEQVR4nO3du20EMRQEQe19pPwzlie/DeoGi6oABmyA/vv6AgAAAAAAAAAA4J5+3s/Hguf751Dh+1rxPlT4/HTYn+ehwsd1fb8+/UUfr+/repwrfB2aLl5HC09NFwefofCfKNycLhRuThcKN6cLhZvThcLN6ULh5nShcHO6ULg5XSjcnC4Ubk4XCjenC4Wb04XCzelC4eZ0oXBzulC4OV0o3JwuFG5OFwo3pwuFm9OFws3pQuHmdKFwc7pQuDldKNycLhRuThcKN6cLhZvThcLN6ULh5nShcHO6ULg5XSjcnC4Ubk4XCjenC4Wb04XCzelC4eZ0oXBzulC4OV0o3JwuFG5OFwo3pwuFm9OFws3pQuHmdKFwc7pQuDldKNycLhRuThcKN6cLhZvThcLN6ULh5nShcHO6ULg5XSjcnC4Ubk4XCjenC4Wb04XCzelC4eZ0oXBzujhbeP8blje/Q3r/W7L3vwd8/5vOAAAAAAAAAAAAfNovofQM/S+mDJYAAAAASUVORK5CYII="
+                    class="card-img-top" >
+                    <div class="card-body">
+                        <h5>Cuadrado</h5>
+                        <p>Ingrese cuánto mide el lado del cuadrado</p>
+                        <div class="input-group input-group-sm mb-3">
+                            <input type="number" class="form-control" id="LadoSquare">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="calcSquare" onclick="cuadrado()" >
+                            calcular
+                        </button>
+                    </div>
+                </div>
+
+              </div>
+              <div class="col">
+
+                   <div class="card" style="width: 18rem">
+                        <img src="https://respuestas.tips/wp-content/uploads/2015/06/circunferencia1.jpg"
+                        class="card-img-top" >
+                        <div class="card-body">
+                            <h5>Circunferencia</h5>
+                            <p>Ingrese el radio de la circunferencia</p>
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="number" class="form-control" id="radio">
+                            </div>
+                            <button type="button" class="btn btn-primary" id="calcCircles" onclick="circunferencia()" >
+                                calcular
+                            </button>
+                        </div>
+                        
+                    </div>
+                
+              </div>
+              <div class="col">
+
+                <div class="card" style="width: 18rem">
+                    <img src="https://i0.wp.com/mitoyleyenda.com/wp-content/uploads/2019/04/Triangulo.png?fit=908%2C547&ssl=1&resize=1280%2C720"
+                    class="card-img-top" >
+                    <div class="card-body">
+                        <h5>Triángulo</h5>
+                        <p>Ingrese los lados del triángulo</p>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="lado1">Lado1</span>
+                            <input type="number" class="form-control" >
+                        </div>
+        
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="lado2">Lado2</span>
+                            <input type="number" class="form-control" >
+                        </div>
+        
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="base">Base</span>
+                            <input type="number" class="form-control" >
+                        </div>
+        
+        
+                        <button type="button" class="btn btn-primary" id="calcTria" onclick="triangulo()">
+                            calcular
+                        </button>
+                    </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+
     </section>
     <script src="figuras.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
